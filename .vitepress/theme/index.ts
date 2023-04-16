@@ -1,6 +1,6 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
-import Theme from 'vitepress/theme'
+import Theme from '@jcamp/vitepress-blog-theme'
 import './style.css'
 
 export default {
@@ -12,5 +12,5 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
-  }
+  },
 }

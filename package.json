@@ -1,7 +1,10 @@
 {
+  "type": "module",
   "devDependencies": {
+    "@jcamp/vitepress-blog-theme": "0.1.2",
     "vitepress": "1.0.0-alpha.71",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "date-fns": "^2.29.3"
   },
   "scripts": {
     "dev": "vitepress dev",
