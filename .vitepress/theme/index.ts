@@ -1,16 +1,16 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
-import Theme from '@jcamp/vitepress-blog-theme'
+import { VPBTheme } from '@jcamp/vitepress-blog-theme'
 import './style.css'
 
 export default {
-  ...Theme,
+  ...VPBTheme,
   Layout: () => {
-    return h(Theme.Layout, null, {
+    return h(VPBTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
+    VPBTheme.enhanceApp({ app, router, siteData })
   },
 }
