@@ -2,4 +2,5 @@
 layout: home
 ---
 
+<TestLocal />
 <VPBHome />

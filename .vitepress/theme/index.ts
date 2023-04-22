@@ -2,6 +2,7 @@
 import { h } from 'vue'
 import { VPBTheme } from '@jcamp/vitepress-blog-theme'
 import './style.css'
+import TestLocalComponent from './TestLocalComponent.vue'
 
 export default {
   ...VPBTheme,
@@ -12,5 +13,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     VPBTheme.enhanceApp({ app, router, siteData })
+    app.component('TestLocal', TestLocalComponent)
   },
 }
