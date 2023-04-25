@@ -2,11 +2,14 @@ lockfileVersion: '6.0'
 
 devDependencies:
   '@jcamp/vitepress-blog-theme':
-    specifier: 0.2.2
-    version: 0.2.2(vitepress@1.0.0-alpha.74)
+    specifier: 0.2.3
+    version: 0.2.3(vitepress@1.0.0-alpha.74)
   vitepress:
     specifier: 1.0.0-alpha.74
     version: 1.0.0-alpha.74
+  vue:
+    specifier: ^3.2.47
+    version: 3.2.47
 
 packages:
 
@@ -463,8 +466,8 @@ packages:
       - supports-color
     dev: true
 
-  /@jcamp/vitepress-blog-theme@0.2.2(vitepress@1.0.0-alpha.74):
-    resolution: {integrity: sha512-G2Un7ZzN2u4ijv3NC913bGojDQ8c9XAstNTvTeiG8wsQmfvwB4HESVCKorwcewHHDt+gWTaa8J8Ax6X93Whq/g==}
+  /@jcamp/vitepress-blog-theme@0.2.3(vitepress@1.0.0-alpha.74):
+    resolution: {integrity: sha512-Q8OlDQzS58xPCFKHuzcDAivaXzu4aUEzYdwfv0iCoELBAKOo402kRjN0mH9FPDl/xeHtv50nbHQqKJJ/q6ZBpg==}
     peerDependencies:
       vitepress: ^1.0.0-alpha.74
     dependencies:

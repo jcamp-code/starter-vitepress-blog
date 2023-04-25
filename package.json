@@ -1,10 +1,16 @@
 {
-  "name": "start-vitepress-blog",
+  "name": "vitepress-blog-init",
   "version": "0.0.1",
   "type": "module",
+  "homepage": "https://github.com/jcamp-code/starter-vitepress-blog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcamp-code/starter-vitepress-blog.git"
+  },
   "devDependencies": {
-    "@jcamp/vitepress-blog-theme": "0.2.2",
-    "vitepress": "1.0.0-alpha.74"
+    "@jcamp/vitepress-blog-theme": "0.2.3",
+    "vitepress": "1.0.0-alpha.74",
+    "vue": "^3.2.47"
   },
   "scripts": {
     "dev": "vitepress dev src",

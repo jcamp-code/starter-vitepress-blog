@@ -2,5 +2,5 @@
 layout: home
 ---
 
-<TestLocal />
+<CustomBlogHeader />
 <VPBHome />
