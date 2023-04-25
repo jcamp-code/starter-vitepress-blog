@@ -1,14 +1,15 @@
 {
+  "name": "start-vitepress-blog",
+  "version": "0.0.1",
   "type": "module",
   "devDependencies": {
-    "@jcamp/vitepress-blog-theme": "0.1.5",
-    "vitepress": "1.0.0-alpha.73",
-    "vue": "^3.2.47"
+    "@jcamp/vitepress-blog-theme": "0.2.2",
+    "vitepress": "1.0.0-alpha.74"
   },
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src"
   },
   "pnpm": {
     "peerDependencyRules": {

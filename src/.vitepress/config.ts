@@ -1,11 +1,27 @@
-import { defineConfig } from 'vitepress'
-import { genFeed, processPosts } from '@jcamp/vitepress-blog-theme/node'
+import { defineConfig } from '@jcamp/vitepress-blog-theme/config'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'My Awesome Project',
-  description: 'A VitePress Site',
+  title: 'VitePress Blog Demo',
+  description: 'A VitePress Blog Theme',
   themeConfig: {
+    blog: {
+      title: 'My AI Written Blog',
+      description: 'All these articles were written by AI!',
+      defaultAuthor: 'AI Writer',
+      categoryIcons: {
+        article: 'i-[heroicons-outline/book-open]',
+        tutorial: 'i-[heroicons-outline/academic-cap]',
+        document: 'i-[heroicons-outline/annotation]',
+      },
+      tagIcons: {
+        github: 'i-[carbon/logo-github]',
+        vue: 'i-[carbon/logo-vue]',
+      },
+    },
+    search: {
+      provider: 'local',
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -47,10 +63,11 @@ export default defineConfig({
       },
     ],
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
-  },
-  buildEnd: genFeed,
-  async transformPageData(pageData, ctx) {
-    await processPosts(pageData, ctx)
+    socialLinks: [
+      {
+        icon: 'github',
+        link: 'https://github.com/jcamp-code/vitepress-blog-theme',
+      },
+    ],
   },
 })
