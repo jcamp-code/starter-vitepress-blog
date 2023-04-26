@@ -8,7 +8,7 @@
     "url": "git+https://github.com/jcamp-code/starter-vitepress-blog.git"
   },
   "devDependencies": {
-    "@jcamp/vitepress-blog-theme": "0.2.3",
+    "@jcamp/vitepress-blog-theme": "0.3.0",
     "vitepress": "1.0.0-alpha.74",
     "vue": "^3.2.47"
   },
