@@ -9,8 +9,8 @@
   },
   "devDependencies": {
     "@jcamp/vitepress-blog-theme": "0.3.0",
-    "vitepress": "1.0.0-alpha.74",
-    "vue": "^3.2.47"
+    "vitepress": "1.0.1",
+    "vue": "^3.4.21"
   },
   "scripts": {
     "dev": "vitepress dev src",
